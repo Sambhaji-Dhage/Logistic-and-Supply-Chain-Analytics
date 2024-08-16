@@ -65,7 +65,6 @@ Warehouse Inventory: Information on inventory management for each product name i
 
 ## Key Insights 
 
-## Key Insights 
 **1 Profit & Cost :**
 * Most Profitable Goods
 * Product By Highest Inventory Storage Cost
