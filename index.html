@@ -3,58 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Creative Studio - Digital Innovation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2>ModernSite</h2>
+            <div class="logo">
+                <span class="logo-text">Creative</span>
+                <span class="logo-accent">Studio</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to the Future</h1>
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">We Create</span>
+                    <span class="title-line highlight">Amazing Digital</span>
+                    <span class="title-line">Experiences</span>
+                </h1>
                 <p class="hero-description">
-                    Discover innovative solutions and cutting-edge technology that will transform your digital experience.
+                    Transforming ideas into stunning digital realities. We specialize in web design, 
+                    development, and digital marketing that drives results.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Get Started</button>
-                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-primary">
+                        <span>Start Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
+                    </button>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <i class="fas fa-rocket"></i>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="mockup-screen">
+                            <div class="screen-header">
+                                <div class="screen-title">Creative Studio</div>
+                            </div>
+                            <div class="screen-content">
+                                <div class="content-line"></div>
+                                <div class="content-line short"></div>
+                                <div class="content-line"></div>
+                                <div class="content-line medium"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -62,34 +98,193 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About Us</h2>
-                <p>We are passionate about creating exceptional digital experiences</p>
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Crafting Digital Excellence</h2>
+                <p class="section-description">
+                    We are a team of passionate designers and developers who believe in the power 
+                    of great design and clean code to create exceptional digital experiences.
+                </p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>
-                        We believe in the power of technology to solve complex problems and create meaningful connections. 
-                        Our team of experts is dedicated to delivering innovative solutions that drive real results.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h4>500+</h4>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h4>50+</h4>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat">
-                            <h4>5+</h4>
-                            <p>Years Experience</p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>
+                            Founded in 2020, Creative Studio has been at the forefront of digital innovation. 
+                            We combine creativity with technical expertise to deliver solutions that not only 
+                            look amazing but also perform exceptionally.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>5+ Years Experience</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>100+ Projects Delivered</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>50+ Happy Clients</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-users"></i>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Our Latest Work</h2>
+                <p class="section-description">
+                    Explore our recent projects and see how we bring creative visions to life.
+                </p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="project-mockup web-mockup">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Modern online shopping experience</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="project-mockup mobile-mockup">
+                            <div class="mockup-phone">
+                                <div class="phone-screen">
+                                    <div class="app-header"></div>
+                                    <div class="app-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Fitness App</h3>
+                            <p>Personal training companion</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="project-mockup branding-mockup">
+                            <div class="brand-logo">
+                                <div class="logo-shape"></div>
+                                <div class="logo-text">Brand</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete brand makeover</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="project-mockup web-mockup">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website</h3>
+                            <p>Professional business presence</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="project-mockup mobile-mockup">
+                            <div class="mockup-phone">
+                                <div class="phone-screen">
+                                    <div class="app-header"></div>
+                                    <div class="app-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Food Delivery App</h3>
+                            <p>Order food with ease</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="project-mockup branding-mockup">
+                            <div class="brand-logo">
+                                <div class="logo-shape"></div>
+                                <div class="logo-text">Studio</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Creative Agency</h3>
+                            <p>Visual identity design</p>
+                            <button class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,37 +295,64 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive solutions tailored to your needs</p>
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What We Do Best</h2>
+                <p class="section-description">
+                    Comprehensive digital solutions tailored to your business needs.
+                </p>
             </div>
             <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces that provide exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>User Research & Analysis</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Web Development</h3>
-                    <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                    <p>Building responsive, fast, and scalable websites using the latest technologies and best practices.</p>
+                    <ul class="service-features">
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>Database Design</li>
+                        <li>Performance Optimization</li>
+                    </ul>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Mobile Apps</h3>
-                    <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    <h3>Mobile Development</h3>
+                    <p>Developing native and cross-platform mobile applications that deliver seamless user experiences.</p>
+                    <ul class="service-features">
+                        <li>iOS Development</li>
+                        <li>Android Development</li>
+                        <li>Cross-platform Apps</li>
+                        <li>App Store Optimization</li>
+                    </ul>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Data Analytics</h3>
-                    <p>Transform your data into actionable insights with our advanced analytics solutions.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable and secure cloud infrastructure to power your business growth.</p>
+                    <h3>Digital Marketing</h3>
+                    <p>Driving growth through strategic digital marketing campaigns and data-driven insights.</p>
+                    <ul class="service-features">
+                        <li>SEO & SEM</li>
+                        <li>Social Media Marketing</li>
+                        <li>Content Strategy</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -139,46 +361,65 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Ready to start your next project? Let's talk!</p>
-            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>hello@modernsite.com</p>
-                        </div>
+                    <div class="section-header">
+                        <span class="section-tag">Contact</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                        <p class="section-description">
+                            Ready to start your next project? Get in touch and let's create something amazing together.
+                        </p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@creativestudio.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Innovation Street<br>Tech City, TC 12345</p>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Office</h4>
+                                <p>123 Design Street<br>Creative City, CC 12345</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -188,41 +429,49 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>ModernSite</h3>
-                    <p>Creating digital experiences that matter.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="logo">
+                        <span class="logo-text">Creative</span>
+                        <span class="logo-accent">Studio</span>
                     </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <p>Creating digital experiences that inspire and engage.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Web Design</a></li>
                         <li><a href="#">Mobile Apps</a></li>
-                        <li><a href="#">Data Analytics</a></li>
-                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> hello@modernsite.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ModernSite. All rights reserved.</p>
+                <p>&copy; 2024 Creative Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>
